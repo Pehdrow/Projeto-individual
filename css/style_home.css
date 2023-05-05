@@ -40,20 +40,29 @@ header .logo{
     position: relative;
     max-width: 100px;
 }
+
+.navegacao{
+    margin-left: 50%;
+   
+
+}
+
+
 header .navegacao ul{
     position: relative;font: bold;
     display: flex;
 }
-header .navegacao  li{
+header .navegacao span{
     list-style: none;
 }
-header .navegacao li a{
+header .navegacao span a{
     display: inline-block;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
     font-size: 19px;
-    margin-left: 100px;
+    margin-left: 50px;
+    font: bold;
     
 }
 .content{
@@ -97,4 +106,39 @@ header .navegacao li a{
     border-radius: 40px;
     
 }
+
+.footer {
+    
+    height: 40px;
+    background-color: #111018;
+    border-top: 5px solid #afc7b9;
+    /* borda do foorter */
+    color: #fff;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+
+.footer .container {
+
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+
+}
+
+h4{
+    align-items: center;
+    margin-top: auto ;
+    color: #afc7b9;
+
+}
+
+
+
 

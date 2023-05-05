@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_login.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <section>
+        <img src="./12984.webp" alt="" class="imagem">
+        
+        <header>
+            
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="musica.html"> música</a></li>
+                    <li><a href="#">Minha história</a></li>
+                    <li><a href="#">@@@@@@</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+
+
+
+<div class="banner">
+        
+    <div class="formulario">
+        <h4 id="saudacao" >Faça seu login!</h4>
+        <h4>Usuário:</h4>
+        <label id="input_usuario" type="usuario">
+        <input type="text" id="input_nome" name="nome" placeholder="Seu Usuário...">
+
+        <h4>Email:</h4>
+        <label id="input_email" type="email">
+        <input type="text" id="input_nome" name="nome" placeholder="Seu Email...">
+
+        <h4>Código da empresa:</h4>
+        <label id="input_codigo" type="email">
+        <input type="text" id="input_nome" name="nome" placeholder="Código da empresa...">
+
+        <h4> Senha:</h4>
+        <label id="input_senha" type="password">
+        <input type="text" id="input_nome" name="nome" placeholder="Sua Senha..">
+
+        
+
+        <button onclick="validar()">Login</button>
+    </div>
+ 
+</div>
+
+<div class="footer">
+    <div class="container">
+        <h4>
+            TermoGuard, controlando a temperatura do seu futuro! &hearts; 2023/1
+        </h4>
+    </div>
+</div>
+</body>
+
+</html>
+<script>
+function validar (){
+    var email = input_email.value
+    var usuario = input_usuario.value;
+    var codigo = input_codigo.value;
+    var senha = input_senha.value;
+    var usuario1 = `jorgearagao`;
+    var email1 = "jorge.aragao@sptech.school";
+    var senha1 = "12345678";
+    var codigo1 = 100;
+
+    if(usuario == email1  && senha == senha1 && codigo == codigo1){
+        window.location.href="../Dashboard Localizacao/home.html";
+    } else {
+        alert("Dados inválidos")
+} 
+
+}
+</script>
