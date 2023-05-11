@@ -18,7 +18,7 @@
                 <ul>
                     <span><a href="index.html">Home</a></span>
                     <span><a href="musica.html"> música</a></span>
-                    <span><a href="minha_historia.html">Minha história</a></span>
+                    <span><a href="minha_historia.html">história da flauta</a></span>
                     <span><a href="#">Login</a></span>
                 </ul>
             </nav>
@@ -42,9 +42,7 @@
         <label id="input_email" type="email">
         <input type="text" id="input_nome" name="nome" placeholder="Seu Email...">
 
-        <h4>Código da empresa:</h4>
-        <label id="input_codigo" type="email">
-        <input type="text" id="input_nome" name="nome" placeholder="Código da empresa...">
+       
 
         <h4> Senha:</h4>
         <label id="input_senha" type="password">
@@ -71,14 +69,13 @@
 function validar (){
     var email = input_email.value
     var usuario = input_usuario.value;
-    var codigo = input_codigo.value;
     var senha = input_senha.value;
-    var usuario1 = `jorgearagao`;
-    var email1 = "jorge.aragao@sptech.school";
+    var usuario1 = `PedroHenrique`;
+    var email1 = "pedro.lsantos@sptech.school";
     var senha1 = "12345678";
-    var codigo1 = 100;
+    
 
-    if(usuario == email1  && senha == senha1 && codigo == codigo1){
+    if(usuario == email1  && senha == senha1 ){
         window.location.href="../Dashboard Localizacao/home.html";
     } else {
         alert("Dados inválidos")

@@ -65,10 +65,11 @@ header .navegacao span a{
 
 .banner {
    
-    height: auto;
+    height: 80%;
     align-items: center;
-    min-height: 80%;    
- 
+    padding-bottom: 50%;
+  
+   
 }
 .banner .container {
     display: flex;
@@ -88,11 +89,14 @@ header .navegacao span a{
     align-items: center;
     
     
+    
 }
 
-.botao {
-    height: 50%;
+.formulario .botao {
+    width: 80%;
     border-radius: 4%;
+    
+   
     
 }
 
@@ -110,7 +114,7 @@ header .navegacao span a{
 .formulario input {
     
     width: 350px; /* tamanho da input*/
-    height: 30px; /*grossura da input*/
+    height: 35px; /*grossura da input*/
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 0px 0px 0px 20px;   

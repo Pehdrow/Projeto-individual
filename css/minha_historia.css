@@ -40,7 +40,30 @@ header{
 }
 
 
+.navegacao{
+    margin-left: 50%;
+   
 
+}
+
+
+header .navegacao ul{
+    position: relative;font: bold;
+    display: flex;
+}
+header .navegacao span{
+    list-style: none;
+}
+header .navegacao span a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 50px;
+    font: bold;
+    
+}
 
 
 

@@ -71,6 +71,7 @@ header .navegacao span a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 6%;
 }
 .content .texto{
     position: relative;
