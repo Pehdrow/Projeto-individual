@@ -23,7 +23,8 @@ section{
     display: flex;
     width: 100%;
     height: 150%;
-    z-index: -2
+    z-index: -2;
+   
 }
 
 header{
@@ -40,12 +41,14 @@ header{
 
 .navegacao{
     margin-left: 50%;
+    margin-top: -3%;
 }
 
 
 header .navegacao ul{
     position: relative;
     display: flex;
+    
 }
 header .navegacao  span{
     list-style: none;
@@ -103,9 +106,12 @@ header .navegacao span a{
 .formulario h4 {
     
     margin: 0;
+  
+   
 }
 
 #saudacao {
+   
     font-size: 25px;
     margin-bottom: 20px;
     align-self: center;
@@ -113,8 +119,8 @@ header .navegacao span a{
 
 .formulario input {
     
-    width: 350px; /* tamanho da input*/
-    height: 35px; /*grossura da input*/
+    width: 300px; /* tamanho da input*/
+     /*grossura da input*/
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 0px 0px 0px 20px;   
@@ -132,8 +138,8 @@ header .navegacao span a{
 .footer {
     
     height: 40px;
-    background-color: #111018;
-    border-top: 5px solid white;
+    backdrop-filter: contrast(80%);
+    border-top: 2px solid #fff;
     /* borda do foorter */
     color: #fff;
     bottom: 0;
@@ -150,7 +156,7 @@ header .navegacao span a{
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: white;
+    color: #fff;
 
    
 

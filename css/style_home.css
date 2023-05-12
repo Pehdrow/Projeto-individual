@@ -36,13 +36,13 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-header .logo{
-    position: relative;
-    max-width: 100px;
-}
+ 
 
 .navegacao{
     margin-left: 50%;
+    margin-top: -3%;
+    
+    
    
 
 }
@@ -111,8 +111,8 @@ header .navegacao span a{
 .footer {
     
     height: 40px;
-    background-color: #111018;
-    border-top: 5px solid #afc7b9;
+    backdrop-filter: contrast(80%);
+    border-top: 2px solid #fff;
     /* borda do foorter */
     color: #fff;
     bottom: 0;
@@ -136,7 +136,7 @@ header .navegacao span a{
 h4{
     align-items: center;
     margin-top: auto ;
-    color: #afc7b9;
+    color: #fff;
 
 }
 
