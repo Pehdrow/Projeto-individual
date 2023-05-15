@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    
+
+    
+}
+.imagem{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 150%;
+    z-index: -2;
+   
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navegacao{
+    margin-left: 50%;
+    margin-top: -3%;
+}
+
+
+header .navegacao ul{
+    position: relative;
+    display: flex;
+    
+}
+header .navegacao  span{
+    list-style: none;
+}
+header .navegacao span a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 50px;
+    font: bold;
+   
+}
+
+
+
+.banner {
+   
+    height: 80%;
+    align-items: center;
+    padding-bottom: 50%;
+  
+   
+}
+.banner .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    
+    display: flex;
+    flex-direction: column; 
+    width: 500px;
+    height: 30%; /* se mudar aqui deixa na metade o form de login*/
+    color: #fff;
+    width: 80%;
+    padding: 80px;
+    border-radius: 20px;
+    align-items: center;
+    
+    
+    
+}
+
+.formulario .botao {
+    width: 80%;
+    border-radius: 4%;
+    
+   
+    
+}
+
+.formulario h4 {
+    
+    margin: 0;
+  
+   
+}
+
+#saudacao {
+   
+    font-size: 25px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.formulario input {
+    
+    width: 300px; /* tamanho da input*/
+     /*grossura da input*/
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0px 0px 0px 20px;   
+}
+.formulario h2 {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.footer {
+    
+    height: 40px;
+    backdrop-filter: contrast(80%);
+    border-top: 2px solid #fff;
+    /* borda do foorter */
+    color: #fff;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+
+.footer .container {
+
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+
+   
+
+}
