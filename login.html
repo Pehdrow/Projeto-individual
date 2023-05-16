@@ -17,7 +17,6 @@
             <nav class="navegacao">
                 <ul>
                     <span><a href="index.html">Home</a></span>
-                    <span><a href="musica.html"> música</a></span>
                     <span><a href="minha_historia.html">história da flauta</a></span>
                     <span><a href="#">Cadastro</a></span>
                 </ul>
@@ -35,15 +34,15 @@
     <div class="formulario">
         <h4 id="saudacao" >Faça seu login!</h4>
         <h4>Usuário:</h4>
-        <label id="input_usuario" type="usuario">
-        <input type="text" id="input_nome" name="nome" placeholder="Seu Usuário...">
+       
+        <input type="text" id="input_usuario" name="usuario" placeholder="Seu Usuário...">
 
    
        
 
         <h4> Senha:</h4>
-        <label id="input_senha" type="password">
-        <input type="text" id="input_nome" name="nome" placeholder="Sua Senha..">
+      
+        <input type="text" id="input_senha" name="senha" placeholder="Sua Senha..">
 
         
 
@@ -64,16 +63,14 @@
 </html>
 <script>
 function validar (){
-    var email = input_email.value
     var usuario = input_usuario.value;
     var senha = input_senha.value;
     var usuario1 = `Pedro Henrique`;
-    var email1 = "pedro.lsantos@sptech.school";
     var senha1 = "12345678";
     
 
-    if(usuario == usuario1  && senha == senha1 && email == email1 ){
-        window.location.href="";
+    if(usuario == usuario1  && senha == senha1  ){
+        window.location.href="file:///C:/Users/Pedro/Desktop/site%20flauta/Projeto-individual/minha_historia.html";
     } else {
         alert("Dados inválidos")
 } 

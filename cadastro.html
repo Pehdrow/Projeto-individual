@@ -17,7 +17,7 @@
             <nav class="navegacao">
                 <ul>
                     <span><a href="index.html">Home</a></span>
-                    <span><a href="musica.html"> música</a></span>
+                    
                     <span><a href="minha_historia.html">história da flauta</a></span>
                     <span><a href="#">Cadastro</a></span>
                 </ul>
@@ -75,12 +75,11 @@ function validar (){
     var usuario = input_usuario.value;
     var senha = input_senha.value;
     var confirmacao = input_confirmar.value;
-    var usuario1 = `Pedro Henrique`;
-    var email1 = "pedro.lsantos@sptech.school";
-    var senha1 = "12345678";
+  
     
 
-    if(usuario == usuario1  && senha == senha1 && senha == confirmacao && email == email1){
+    if(email.indexOf('@') && email.indexOf('.') )
+    {
         window.location.href="file:///C:/Users/Pedro/Desktop/site%20flauta/Projeto-individual/login.html";
     } else {
         alert("Dados inválidos")
