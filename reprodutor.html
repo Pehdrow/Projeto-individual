@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reprodutor.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+ <img src="assets/preto.jpg" alt="" class="imagem">
+    <section>
+       
+        
+        <header>
+           
+            <nav class="navegacao">
+                <ul>
+                    <span><a href="index.html">Home</a></span>
+                    <span><a href="minha_historia.html">história da flauta </a></span>
+                    <span><a href="reprodutor.html">Reprodutor</a></span>
+                    <span><a href="Cadastro.html">Cadastro</a></span>
+                </ul>
+            </nav>
+        </header>
+
+        
+
+
+       
+    </section> 
+      
+<h1>Reproduzindo músicas <br> Tocadas com a flauta transversal </h1>
+    <div class="container">
+
+
+
+        <p>Música Clássica</p>
+        <audio preload="metadata" autoplay controls >
+            <source src="sons/classico.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>Samba</p>
+        <audio preload="metadata" autoplay controls >
+            <source src="sons/samba.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>Pop</p>
+        <audio preload="metadata" autoplay controls >
+            <source src="sons/pop.mp3" type="audio/mpeg">
+        </audio>
+</div>
+
+    <div class="chart-container" >
+        
+        </div>
+
+    <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      
+      
+      
+      
+      </body>
+      <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Música Clássica', 'Samba', 'Mpb', 'Sertanejo', 'Pop', 'Rock'],
+            datasets: [{
+              label: 'Homens', 
+              backgroundColor: 'rgb(109,117,120)',
+              data: [50, 89, 53, 97, 88, 22],
+              borderWidth: 1
+            },
+            {
+              label: 'Mulheres', 
+              backgroundColor: 'rgb(230,179,154)',
+              data: [45, 78, 87, 98, 80, 30],
+              borderWidth: 1
+            }
+          ]
+          },
+          
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      
+      
+      </script>
+       
+      </html>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <h4>
+                Pedro Lacerda &#x1F3B5; 
+            </h4>
+        </div>
+    </div>
