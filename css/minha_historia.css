@@ -128,7 +128,7 @@ header .navegacao span a{
  .texto .container {
    flex-direction: column;
    width: 80%;
-   margin-left: 15%;
+   margin-left: 10%;
    margin-top: 10%;
   
  
@@ -139,6 +139,8 @@ header .navegacao span a{
    margin-top: 5%;
    color: 
    #3e3e53;
+   text-align: center;
+   
  
  }
  
@@ -211,7 +213,7 @@ header .navegacao span a{
     /* borda do foorter */
     color: #3e3e53;
     bottom: 0;
-    position: fixed;
+    
     width: 100%;
     text-align: center;
     
