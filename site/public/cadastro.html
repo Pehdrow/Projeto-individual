@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_login.css">
     <title>Document</title>
+    <script src="./js/funcoes.js"></script>
+
+
 </head>
 <body>
  
@@ -55,7 +58,7 @@
 
         
 
-        <button id="botao" onclick="validar()" >Login</button>
+        <button id="botao" onclick="cadastrar()" >Login</button>
     </div>
  
 </div>
@@ -71,7 +74,7 @@
 
 </html>
 <script>
-function validar (){
+function cadastrar (){
     var email = input_email.value
     var usuario = input_usuario.value;
     var senha = input_senha.value;
@@ -79,9 +82,37 @@ function validar (){
   
     
 
-    if(email.indexOf('@') > -1 || email.indexOf('.') > -1)
+    if(email.indexOf('@') > -1 || email.indexOf('.') > -1 || confirmacao == senha)
     {
-        window.location.href="file:///C:/Users/Pedro/Desktop/site%20flauta/Projeto-individual/login.html";
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                usuarioServer: usuario,
+                emailServer: email,
+                senhaServer: senha
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000")
+
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        return false;
     } else {
         alert("Dados inválidos")
 } 

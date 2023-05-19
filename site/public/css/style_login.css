@@ -135,6 +135,7 @@ header .navegacao span a{
 
 
 
+
 .footer {
     
     height: 40px;
@@ -156,8 +157,14 @@ header .navegacao span a{
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: #fff;
-
+    margin-top: 0.5%;
    
+
+}
+
+h4{
+    align-items: center;
+    margin-top: auto ;
+    color: #fff;
 
 }

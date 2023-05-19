@@ -23,7 +23,8 @@ section{
     display: flex;
     width: 100%;
     height: 150%;
-    z-index: -2
+    z-index: -2;
+   
 }
 
 header{
@@ -36,23 +37,20 @@ header{
     align-items: center;
     justify-content: space-between;
 }
- 
+
 
 .navegacao{
     margin-left: 45%;
     margin-top: -3%;
-    
-    
-   
-
 }
 
 
 header .navegacao ul{
-    position: relative;font: bold;
+    position: relative;
     display: flex;
+    
 }
-header .navegacao span{
+header .navegacao  span{
     list-style: none;
 }
 header .navegacao span a{
@@ -63,50 +61,78 @@ header .navegacao span a{
     font-size: 19px;
     margin-left: 50px;
     font: bold;
-    
-}
-.content{
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 6%;
-}
-.content .texto{
-    position: relative;
-    bottom: 40px;
-    max-width: 600px;
-    margin-left: 30px;
-}
-.content .texto h2{
-    color: #fff;
-    font-size: 3em;
-    margin-bottom: 2px;
-    line-height: 70px;
-    font-weight: 300;
-    
-}
-.content .texto h2 span{
-    font-size: 70px;
-    color: #afc7b9;
    
 }
-.content .texto p{
-    color: #fff;
+
+
+
+.banner {
+   
+    height: 80%;
+    align-items: center;
+    padding-bottom: 50%;
+  
+   
 }
-.content .texto a{
-    display: inline-block;
-    margin-top: 50px;
-    padding: 10px 30px;
-    background: #afc7b9;
-    color:black;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-    border-radius: 40px;
+.banner .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    
+    display: flex;
+    flex-direction: column; 
+    width: 500px;
+    height: 30%; /* se mudar aqui deixa na metade o form de login*/
+    color: #fff;
+    width: 80%;
+    padding: 80px;
+    border-radius: 20px;
+    align-items: center;
+    
+    
     
 }
+
+.formulario .botao {
+    width: 80%;
+    border-radius: 4%;
+    
+   
+    
+}
+
+.formulario h4 {
+    
+    margin: 0;
+  
+   
+}
+
+#saudacao {
+   
+    font-size: 25px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.formulario input {
+    
+    width: 300px; /* tamanho da input*/
+     /*grossura da input*/
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0px 0px 0px 20px;   
+}
+.formulario h2 {
+    margin-bottom: 30px;
+}
+
+
+
+
+
 
 .footer {
     
@@ -129,6 +155,7 @@ header .navegacao span a{
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-top: 0.5%;
    
 
 }
@@ -139,7 +166,4 @@ h4{
     color: #fff;
 
 }
-
-
-
 

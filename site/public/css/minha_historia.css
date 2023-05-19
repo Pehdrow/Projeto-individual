@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-      background-color: #dad7cd;
+      background-color: #f8f8f8;
 }
 section{
  
@@ -59,7 +59,7 @@ header .navegacao span{
 }
 header .navegacao span a{
     display: inline-block;
-    color: #3e3e53;
+    color: black;
     font-weight: 500;
     text-decoration: none;
     font-size: 19px;
@@ -78,6 +78,9 @@ header .navegacao span a{
 
     margin-top: 7%;
     margin-bottom: 2%;
+    font-size: 1.3vw;
+    color: black
+
     
     
       
@@ -99,7 +102,7 @@ header .navegacao span a{
 .gallery-items{
     width: 280px;
     height: 280px;
-    border: 10px solid #FFF;
+    border: 10px solid white;
     box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
     transition: transform .5s linear;
@@ -120,7 +123,8 @@ header .navegacao span a{
  
  
  .texto {
-   color: #3e3e53;
+   color: black;
+   font-size: 1.3vw;
   
    
  }
@@ -138,7 +142,7 @@ header .navegacao span a{
  
    margin-top: 5%;
    color: 
-   #3e3e53;
+   black;
    text-align: center;
    
  
@@ -167,12 +171,12 @@ header .navegacao span a{
  .box h1 {
    margin-top: 5%;
    color: 
-   #3e3e53;
+   black;
  }
  .box hr {
    width: 50%;
    border: 1px solid 
-   #3e3e53;
+   black;
    margin: 1% 0% 7% 0%;
  }
  
@@ -181,7 +185,7 @@ header .navegacao span a{
    font-size: 1.3vw;
  
    color: 
-   #3e3e53;
+   black;
  
  }
  
@@ -200,35 +204,42 @@ header .navegacao span a{
  .ritmo{
    width: auto;
    height: auto;
-   max-width: 70%;
+   max-width: 57%;
  }
 
 
 
-  .footer {
-    
-    height: 40px;
-    backdrop-filter: contrast(80%);
-    border-top: 2px solid #3e3e53;
-    /* borda do foorter */
-    color: #3e3e53;
-    bottom: 0;
-    
-    width: 100%;
-    text-align: center;
-    
+  
+.footer {
+  position: fixed;
+  height: 40px;
+  backdrop-filter: contrast(80%);
+  border-top: 0.4px solid black;
+  /* borda do foorter */
+  color: black;
+  bottom: 0;
+  
+  width: 100%;
+  text-align: center;
+  
 
 }
 
 
 .footer .container {
 
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: #3e3e53;
-    background-color: #3e3e53;
-   
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 0.5%;
+ 
+
+}
+
+h4{
+  align-items: center;
+  margin-top: auto ;
+  color: black;
 
 }
 
