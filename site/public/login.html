@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <title>Document</title>
     <script src="./js/funcoes.js"></script>
 </head>
+
 <body>
- 
+
     <section>
         <img src="./assets/12984.webp" alt="" class="imagem">
-        
+
         <header>
-            
+
             <nav class="navegacao">
                 <ul>
                     <span><a href="index.html">Home</a></span>
@@ -31,51 +33,105 @@
 
 
 
-<div class="banner">
-        
-    <div class="formulario">
-        <h4 id="saudacao" >Faça seu login!</h4>
-        <h4>Usuário:</h4>
-       
-        <input type="text" id="input_usuario" name="usuario" placeholder="Seu Usuário...">
+        <div class="banner">
 
-   
-       
+            <div class="formulario">
+                <h4 id="saudacao">Faça seu login!</h4>
+                <h4>Email:</h4>
 
-        <h4> Senha:</h4>
-      
-        <input type="text" id="input_senha" name="senha" placeholder="Sua Senha..">
+                <input type="text" id="input_email" name="email" placeholder="Seu Usuário...">
 
-        
 
-        <button id="botao" onclick="validar()">Login</button>
-    </div>
- 
-</div>
 
-<div class="footer">
-    <div class="container">
-        <h4>
-            Pedro Lacerda &#x1F3B5; 
-        </h4>
-    </div>
-</div>
+
+                <h4> Senha:</h4>
+
+                <input type="text" id="input_senha" name="senha" placeholder="Sua Senha..">
+
+
+
+                <button id="botao" onclick="entrar()">Login</button>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <h4>
+                    Pedro Lacerda &#x1F3B5;
+                </h4>
+            </div>
+        </div>
 </body>
 
 </html>
 <script>
-function validar (){
-    var usuario = input_usuario.value;
-    var senha = input_senha.value;
-    var usuario1 = `Pedro Henrique`;
-    var senha1 = "12345678";
-    
 
-    if(usuario == usuario1  && senha == senha1  ){
-        window.location.href="file:///C:/Users/Pedro/Desktop/site%20flauta/Projeto-individual/minha_historia.html";
-    } else {
-        alert("Dados inválidos")
-} 
 
-}
+
+
+
+    function entrar() {
+      
+
+        var email = input_email.value;
+        var senha = input_senha.value;
+
+        if (email == "" || senha == "") {
+           
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            
+            return false;
+        }
+
+        console.log("FORM LOGIN: ", email);
+        console.log("FORM SENHA: ", senha);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: email,
+                senhaServer: senha
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.idUsuario;
+
+                    setTimeout(function () {
+                        window.location = "minha_historia.html";
+                    }, 500); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+  
 </script>

@@ -65,6 +65,10 @@ header .navegacao span a{
     font: bold;
     
 }
+
+a:hover, .active {
+    color:#afc7b9!important;
+}
 .content{
     position: relative;
     width: 100%;

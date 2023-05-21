@@ -64,6 +64,10 @@ header .navegacao span a{
    
 }
 
+a:hover, .active {
+    color:#afc7b9!important;
+}
+
 
 
 .banner {

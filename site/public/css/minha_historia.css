@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-      background-color: #f8f8f8;
+      background-color: #090a13;
 }
 section{
  
@@ -16,6 +16,7 @@ section{
     align-items: center;
 
 }
+
 
 
 .banner {
@@ -59,13 +60,17 @@ header .navegacao span{
 }
 header .navegacao span a{
     display: inline-block;
-    color: black;
+    color: #fff;
     font-weight: 500;
     text-decoration: none;
     font-size: 19px;
     margin-left: 50px;
     font: bold;
     
+}
+
+a:hover, .active {
+  color:#afc7b9!important;
 }
 
 
@@ -79,7 +84,7 @@ header .navegacao span a{
     margin-top: 7%;
     margin-bottom: 2%;
     font-size: 1.3vw;
-    color: black
+    color: #fff
 
     
     
@@ -123,7 +128,7 @@ header .navegacao span a{
  
  
  .texto {
-   color: black;
+   color: #FFF;
    font-size: 1.3vw;
   
    
@@ -142,7 +147,7 @@ header .navegacao span a{
  
    margin-top: 5%;
    color: 
-   black;
+   #FFF;
    text-align: center;
    
  
@@ -171,12 +176,12 @@ header .navegacao span a{
  .box h1 {
    margin-top: 5%;
    color: 
-   black;
+   #FFF;
  }
  .box hr {
    width: 50%;
    border: 1px solid 
-   black;
+   #FFF;
    margin: 1% 0% 7% 0%;
  }
  
@@ -185,7 +190,7 @@ header .navegacao span a{
    font-size: 1.3vw;
  
    color: 
-   black;
+   #FFF;
  
  }
  
@@ -214,9 +219,9 @@ header .navegacao span a{
   position: fixed;
   height: 40px;
   backdrop-filter: contrast(80%);
-  border-top: 0.4px solid black;
+  border-top: 0.4px solid #FFF;
   /* borda do foorter */
-  color: black;
+  color: #FFF;
   bottom: 0;
   
   width: 100%;
@@ -239,7 +244,7 @@ header .navegacao span a{
 h4{
   align-items: center;
   margin-top: auto ;
-  color: black;
+  color: #FFF;
 
 }
 
