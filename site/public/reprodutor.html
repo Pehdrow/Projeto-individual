@@ -21,7 +21,7 @@
         <ul>
           <span><a href="index.html">Home</a></span>
           <span><a href="minha_historia.html">história da flauta </a></span>
-          <span><a href="reprodutor.html">Reprodutor</a></span>
+          <span><a href="login.html">Login</a></span>
           <span><a href="Cadastro.html">Cadastro</a></span>
         </ul>
       </nav>
@@ -153,7 +153,7 @@
 
 <script>
 
-  function entrar() {
+  function enviar() {
     var estilo = input_estilo.value;
     var mscMomento = input_musica.value;
     var idioma = input_idioma.value;
@@ -180,7 +180,7 @@
   
     if (resposta.ok) {
         setTimeout(() => {
-            window.location = "";
+            window.location = "reprodutor.html";
         }, "2000")
   
     } else {
