@@ -73,6 +73,59 @@ a:hover, .active {
     color:#afc7b9!important;
 }
 
+
+
+
+.formulario {
+    
+
+    border-radius: 10px;
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 500px;
+   color: white;
+    
+    box-shadow:-5px 11px 11px -1px rgba(	
+        100,100,100)
+}
+
+
+span {
+    display: block;
+    margin-bottom:10px;
+    color: white;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 15px 30px;
+    margin: 8px 0;
+    box-sizing: border-box; /* colocar os input dentro do form*/
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    border-radius: 25px ;
+}
+input[type=submit] {
+    background-color: #bbdeea;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+
+
+input[type=submit]:hover {
+    background-color: #DFEDFF;
+}
+
+
+
+
+
+
     
 
 

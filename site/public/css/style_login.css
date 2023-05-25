@@ -84,16 +84,14 @@ a:hover, .active {
 }
 .formulario{
     
-    display: flex;
-    flex-direction: column; 
-    width: 500px;
-    height: 30%; /* se mudar aqui deixa na metade o form de login*/
-    color: #fff;
-    width: 80%;
-    padding: 80px;
-    border-radius: 20px;
-    align-items: center;
-    
+    border-radius: 10px;
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 500px;
+   color: white;
+    justify-content: center;
+    box-shadow:-5px 11px 11px -1px rgba(	
+        100,100,100)
     
     
 }

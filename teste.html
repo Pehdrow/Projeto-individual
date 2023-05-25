@@ -1,0 +1,38 @@
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: { 
+      labels : ['Música Clássica', 'Samba', 'Mpb', 'Sertanejo', 'Pop', 'Rock'],
+      datasets: [{
+        label: 'Homens',
+       
+        backgroundColor: 'rgb(175,199,185)',
+        
+        data: [50, 89, 53, 75, 88, 22],
+        borderWidth: 1
+        
+        
+      },
+      {
+        
+        label: 'Mulheres',
+        backgroundColor: 'rgb(253,240,213)',
+        data: [45, 78, 87, 83, 80, 30],
+        borderWidth: 1
+      }
+      ]
+    },
+
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+
+</script>

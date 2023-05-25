@@ -66,21 +66,21 @@
         <div>
           <span>Jazz</span>
           <audio preload="metadata"  controls>
-            <source src="sons/classico.mp3" type="audio/mpeg">
+            <source src="sons/Jazz.mp3" type="audio/mpeg">
           </audio>
         </div>
 
         <div>
           <span>Bossa Nova</span>
           <audio preload="metadata"  controls>
-            <source src="sons/samba.mp3" type="audio/mpeg">
+            <source src="sons/bossa nova.mp3" type="audio/mpeg">
           </audio>
 
         </div>
         <div>
           <span>Rock</span>
           <audio preload="metadata"  controls>
-            <source src="sons/pop.mp3" type="audio/mpeg">
+            <source src="sons/eletronica.mp3" type="audio/mpeg">
           </audio>
         </div>
 
@@ -90,6 +90,48 @@
     
 
   </div>
+
+
+
+
+
+  <h1>Pesquisa sobre Estilo Musical</h1>
+  <div class="banner">
+	<div class="formulario">
+		
+	
+    
+    <h4>Qual é o seu estilo musical preferido?</h4>
+    
+    <input type="text" id="input_estilo" name="nome" placeholder="Seu Estilo...">
+
+    
+    <h4>Qual música você considera como a sua "música do momento"?</h4>
+   
+    <input type="text" id="input_musica" name="nome" placeholder="Música do momento...">
+
+
+    <h4> Você prefere músicas em qual idioma?</h4>
+    
+    <input type="text" id="input_idioma" name="nome" placeholder="Idioma...">
+
+    <h4> Quais artistas são os seus favoritos?</h4>
+    <input type="text" id="input_artista" name="nome" placeholder="Artista...">
+
+
+   
+
+   
+
+		<button onclick="enviar()">Enviar</button>
+    </div>
+</div>
+
+
+
+
+
+
 
   <div class="chart-container">
 
@@ -103,47 +145,55 @@
 
 
 </body>
-<script>
-  const ctx = document.getElementById('myChart');
 
-  new Chart(ctx, {
-    type: 'bar',
-    data: { 
-      labels : ['Música Clássica', 'Samba', 'Mpb', 'Sertanejo', 'Pop', 'Rock'],
-      datasets: [{
-        label: 'Homens',
-       
-        backgroundColor: 'rgb(175,199,185)',
-        data: [50, 89, 53, 75, 88, 22],
-        borderWidth: 1
-        
-      },
-      {
-        
-        label: 'Mulheres',
-        backgroundColor: 'rgb(253,240,213)',
-        data: [45, 78, 87, 83, 80, 30],
-        borderWidth: 1
-      }
-      ]
-    },
-
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-
-
-</script>
 
 </html>
 
 
 
+<script>
+
+  function entrar() {
+    var estilo = input_estilo.value;
+    var mscMomento = input_musica.value;
+    var idioma = input_idioma.value;
+    var artista = input_artista.value;
+
+  
+
+  fetch("/musica/cadastrar", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        // crie um atributo que recebe o valor recuperado aqui
+        // Agora vá para o arquivo routes/usuario.js
+        estiloServer: estilo,
+        mscMomentoServer: mscMomento,
+        idiomaServer: idioma,
+        artistaServer: artista
+    })
+  }).then(function (resposta) {
+  
+    console.log("resposta: ", resposta);
+  
+    if (resposta.ok) {
+        setTimeout(() => {
+            window.location = "";
+        }, "2000")
+  
+    } else {
+        throw ("Houve um erro ao tentar realizar o cadastro!");
+    }
+  }).catch(function (resposta) {
+    console.log(`#ERRO: ${resposta}`);
+  });
+  
+}
+  
+  
+  </script>
 
 
 
