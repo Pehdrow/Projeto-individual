@@ -76,6 +76,7 @@
 
         var email = input_email.value;
         var senha = input_senha.value;
+        var fkUsuario = sessionStorage.ID_USUARIO;
 
         if (email == "" || senha == "") {
            
@@ -94,7 +95,8 @@
             },
             body: JSON.stringify({
                 emailServer: email,
-                senhaServer: senha
+                senhaServer: senha,
+                fkUSuarioServer: fkUsuario
             })
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO entrar()!")
@@ -108,7 +110,8 @@
 
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
-                    sessionStorage.ID_USUARIO = json.idUsuario;
+                    sessionStorage.ID_USUARIO = json.fkUsuario;
+                    
 
                     setTimeout(function () {
                         window.location = "reprodutor.html";

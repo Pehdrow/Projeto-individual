@@ -158,6 +158,7 @@
     var mscMomento = input_musica.value;
     var idioma = input_idioma.value;
     var artista = input_artista.value;
+    var fkUsuario = sessionStorage.ID_USUARIO
 
   
 
@@ -172,7 +173,8 @@
         estiloServer: estilo,
         mscMomentoServer: mscMomento,
         idiomaServer: idioma,
-        artistaServer: artista
+        artistaServer: artista,
+        fkUsuarioServer: fkUsuario
     })
   }).then(function (resposta) {
   

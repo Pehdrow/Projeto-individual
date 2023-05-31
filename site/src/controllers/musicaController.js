@@ -15,6 +15,7 @@ function cadastrar(req, res) {
     var mscMomento = req.body.mscMomentoServer;
     var idioma = req.body.idiomaServer;
     var artista = req.body.artistaServer;
+    var fkUsuario = req.body.fkUsuarioServer;
 
     if (estilo == undefined) {
         res.status(400).send("Seu estilo está undefined!");
@@ -26,7 +27,7 @@ function cadastrar(req, res) {
         res.status(400).send("Seu artista está undefined!");
     } else {
 
-    musicaModel.cadastrar(estilo, mscMomento, idioma, artista)
+    musicaModel.cadastrar(estilo, mscMomento, idioma, artista, fkUsuario)
             .then(
                 function (resultado) {
                     res.json(resultado);
