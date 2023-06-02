@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reprodutor.css">
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
 </head>
 
 <body>
@@ -160,7 +161,7 @@
     var artista = input_artista.value;
     var fkUsuario = sessionStorage.ID_USUARIO
 
-  
+    console.log(fkUsuario)
 
   fetch("/musica/cadastrar", {
     method: "POST",
@@ -174,7 +175,7 @@
         mscMomentoServer: mscMomento,
         idiomaServer: idioma,
         artistaServer: artista,
-        fkUsuarioServer: fkUsuario
+        fkUsuarioServer: sessionStorage.ID_USUARIO
     })
   }).then(function (resposta) {
   
