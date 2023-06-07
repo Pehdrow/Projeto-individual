@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+ 
+
+<button id="btnClassical">Música Clássica</button>
+<button id="btnSamba">Samba</button>
+<button id="btnPop">Pop</button>
+<button id="btnJazz">Jazz</button>
+<button id="btnBossaNova">Bossa Nova</button>
+<button id="btnRock">Rock</button>
+<canvas id="myChart"></canvas>
+
+</body>
+</html>
+
+<script>
+
+
+// Função para obter os dados com base no gênero musical selecionado
+function getDataByGenre(genre) {
+  // Lógica para obter os dados do gênero musical da sua fonte de dados
+  // por exemplo, uma API
+  const apiUrl = `web/dados/${genre}`;
+  return fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      // Processamento dos dados
+      const labels = data.map(item => item.label);
+      const values = data.map(item => item.value);
+
+      return { labels, values };
+    });
+}
+
+// Função para criar/atualizar o gráfico
+function createChart(data) {
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: data.labels,
+      datasets: [{
+        label: 'Pesquisa sobre gênero musical',
+        data: data.values,
+        backgroundColor: 'rgba(75, 192, 192, 0.6)'
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+}
+
+// Event Listeners para os botões
+document.getElementById('btnClassical').addEventListener('click', function() {
+  // Obter os dados de Música Clássica e atualizar o gráfico
+  getDataByGenre('classical').then(data => {
+    createChart(data);
+  });
+});
+
+document.getElementById('btnSamba').addEventListener('click', function() {
+  // Obter os dados de Samba e atualizar o gráfico
+  getDataByGenre('samba').then(data => {
+    createChart(data);
+  });
+});
+
+document.getElementById('btnPop').addEventListener('click', function() {
+  // Obter os dados de Pop e atualizar o gráfico
+  getDataByGenre('pop').then(data => {
+    createChart(data);
+  });
+});
+
+document.getElementById('btnJazz').addEventListener('click', function() {
+  // Obter os dados de Jazz e atualizar o gráfico
+  getDataByGenre('jazz').then(data => {
+    createChart(data);
+  });
+});
+
+document.getElementById('btnBossaNova').addEventListener('click', function() {
+  // Obter os dados de Bossa Nova e atualizar o gráfico
+  getDataByGenre('bossanova').then(data => {
+    createChart(data);
+  });
+});
+
+document.getElementById('btnRock').addEventListener('click', function() {
+  // Obter os dados de Rock e atualizar o gráfico
+  getDataByGenre('rock').then(data => {
+    createChart(data);
+  });
+});
+
+
+</script>
+
+
+
+
+
+
+
