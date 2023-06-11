@@ -10,12 +10,12 @@
 <body>
  
 
-<button id="btnClassical">Música Clássica</button>
-<button id="btnSamba">Samba</button>
-<button id="btnPop">Pop</button>
-<button id="btnJazz">Jazz</button>
-<button id="btnBossaNova">Bossa Nova</button>
-<button id="btnRock">Rock</button>
+<button id="Classica">Música Clássica</button>
+<button id="Samba">Samba</button>
+<button id="Pop">Pop</button>
+<button id="Jazz">Jazz</button>
+<button id="BossaNova">Bossa Nova</button>
+<button id="Rock">Rock</button>
 <canvas id="myChart"></canvas>
 
 </body>
@@ -65,42 +65,42 @@ function createChart(data) {
 }
 
 // Event Listeners para os botões
-document.getElementById('btnClassical').addEventListener('click', function() {
+document.getElementById('Classica').addEventListener('click', function() {
   // Obter os dados de Música Clássica e atualizar o gráfico
-  getDataByGenre('classical').then(data => {
+  getDataByGenre('classica').then(data => {
     createChart(data);
   });
 });
 
-document.getElementById('btnSamba').addEventListener('click', function() {
+document.getElementById('Samba').addEventListener('click', function() {
   // Obter os dados de Samba e atualizar o gráfico
   getDataByGenre('samba').then(data => {
     createChart(data);
   });
 });
 
-document.getElementById('btnPop').addEventListener('click', function() {
+document.getElementById('Pop').addEventListener('click', function() {
   // Obter os dados de Pop e atualizar o gráfico
   getDataByGenre('pop').then(data => {
     createChart(data);
   });
 });
 
-document.getElementById('btnJazz').addEventListener('click', function() {
+document.getElementById('Jazz').addEventListener('click', function() {
   // Obter os dados de Jazz e atualizar o gráfico
   getDataByGenre('jazz').then(data => {
     createChart(data);
   });
 });
 
-document.getElementById('btnBossaNova').addEventListener('click', function() {
+document.getElementById('BossaNova').addEventListener('click', function() {
   // Obter os dados de Bossa Nova e atualizar o gráfico
   getDataByGenre('bossanova').then(data => {
     createChart(data);
   });
 });
 
-document.getElementById('btnRock').addEventListener('click', function() {
+document.getElementById('Rock').addEventListener('click', function() {
   // Obter os dados de Rock e atualizar o gráfico
   getDataByGenre('rock').then(data => {
     createChart(data);
