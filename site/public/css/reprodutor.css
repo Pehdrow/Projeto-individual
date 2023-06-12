@@ -108,7 +108,7 @@ input[type=text], textarea {
 }
 input[type=submit] {
     background-color: #bbdeea;
-    color: black;
+    color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
@@ -123,7 +123,11 @@ input[type=submit]:hover {
 }
 
 
-
+ .botao{
+    color: white;
+    background-color: grey;
+    border-color: black;
+ }
 
 
 
@@ -159,7 +163,7 @@ input[type=submit]:hover {
 
     h1 {
         color: #afc7b9;
-        border-color: black;
+        border-color: white;
         margin-top: 8%;
         margin-bottom: 5%;
         text-align: center;
