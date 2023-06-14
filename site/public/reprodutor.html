@@ -124,8 +124,13 @@
 
    
 
-		<button class="botao" onclick="enviar()">Enviar</button>
+		<button class="button" id="enviar" onclick="enviar()">Enviar</button>
     </div>
+</div>
+
+<div class="buttons">
+  <button class="button" id="home" onclick="voltar()">sair</button>
+  <button class="button" id="dash" onclick="dash()">Ir para a dashboard</button>
 </div>
 
 
@@ -138,9 +143,7 @@
 
   </div>
 
-  <div>
-    <canvas id="myChart"></canvas>
-  </div>
+  
 
 
 
@@ -153,6 +156,14 @@
 
 
 <script>
+
+  function voltar(){
+    window.location = "index.html";
+  }
+
+  function dash() {
+    window.location = "dashboard.html";
+  }
 
   function enviar() {
     var estilo = input_estilo.value;

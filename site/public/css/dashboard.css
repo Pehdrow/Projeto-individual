@@ -75,10 +75,10 @@ header .navegacao span a{
 
 
 .grafico{
-    width: 50%;
-    
-    height: 10rem;
-    border: 3px solid antiquewhite;
+    width: 65vw;
+    height: 65vh;
+    border: none;
+    margin-top: 7.6%;
 }
 .caixaBotoes {
     width: 100%;
@@ -205,6 +205,7 @@ header .navegacao span a{
     padding-top: 5rem;
     justify-content: space-between;
     text-align: center;
+    align-items: center;
 }
 .sessaoBotoes h2 {
     display: flex;
