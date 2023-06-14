@@ -76,8 +76,9 @@ header .navegacao span a{
 
 .grafico{
     width: 50%;
-    margin-left: 2%;
-    margin-top: 15%;
+    
+    height: 10rem;
+    border: 3px solid antiquewhite;
 }
 .caixaBotoes {
     width: 100%;
@@ -85,13 +86,125 @@ header .navegacao span a{
     align-items: center;
     justify-content: space-around;
 }
+
+/* Estilizar botoes */
+
+.btnClassica {
+    background-color: antiquewhite;
+    padding: 0.2rem;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+  
+}
+
+.btnClassica:hover {
+    color: black;
+    background-color: white;
+   
+}
+
+
+.btnSamba {
+    background-color: antiquewhite;
+    padding: 0.2rem;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+  
+}
+
+.btnSamba:hover {
+    color: black;
+    background-color: white;
+   
+}
+
+
+
+
+.btnPop {
+    background-color: antiquewhite;
+    padding: 0.2rem;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+  
+}
+
+.btnPop:hover {
+    color: black;
+    background-color: white;
+   
+}
+
+
+
+.btnJazz {
+    background-color: antiquewhite;
+    padding: 0.2rem;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+  
+}
+
+.btnJazz:hover {
+    color: black;
+    background-color: white;
+   
+}
+
+.btnBossa {
+    background-color: antiquewhite;
+    padding: 0.2rem;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+  
+}
+
+.btnBossa:hover {
+    color: black;
+    background-color: white;
+   
+}
+
+
+.btnRock {
+    background-color: antiquewhite;
+    padding: 0.2rem;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+  
+}
+
+.btnRock:hover {
+    color: black;
+    background-color: white;
+   
+}
+
+
+
+
+
+
+
+
+
 .sessaoBotoes {
-    flex-direction: column;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10%;
-    margin-right: 5%;
+    padding-top: 5rem;
+    justify-content: space-between;
+    text-align: center;
 }
 .sessaoBotoes h2 {
     display: flex;
@@ -106,8 +219,6 @@ button {
     border: none;
     margin: 1%;
     padding: 3%;
-    border-radius: 15px;
-    
 }
 
 
